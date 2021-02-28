@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.FoodTruck.DataManagement.Loation.Persistence\Api.FoodTruck.DataManagement.Location.Persistence.csproj" />
+    <ProjectReference Include="..\Api.FoodTruck.DataManagement.Location\Api.FoodTruck.DataManagement.Location.Definition.csproj" />
+    <ProjectReference Include="..\Api.FoodTruck.DataManagement.Utilities\Api.FoodTruck.DataManagement.Utilities.csproj" />
+    <ProjectReference Include="..\LocationWithQueries\LocationWithQueries.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

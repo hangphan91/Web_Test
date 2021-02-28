@@ -1,0 +1,21 @@
+﻿@model Api.FoodTruck.FoodTruckApi.Models.GetLocationResponse
+@{
+    ViewData["Title"] = "About";
+    var fullAddress = "3094+Chisca+ave,Memphis+TN";
+    var apiKey = "AIzaSyDkzNjZ6I8ler6vdFRnk58LvMeGYSTdxWY";
+    var currentAddress = @Model.Location.FullAddress;
+    fullAddress = currentAddress != null ? currentAddress : fullAddress;
+    var link = "https://www.google.com/maps/embed/v1/place?key=" + apiKey + "&q=" + fullAddress;
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+<h3> @fullAddress   </h3>
+@*@{ 
+<iframe width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src=@link>
+</iframe>
+}*@
