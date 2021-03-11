@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.FoodTruck.DataManagement.DotNetCore.Location.Definition\Api.FoodTruck.DataManagement.DotNetCore.Location.Definition.csproj" />
     <ProjectReference Include="..\Api.FoodTruck.FoodTruckApi\Api.FoodTruck.FoodTruckApi.csproj" />
   </ItemGroup>
 

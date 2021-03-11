@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LinhFoodTruck.Website.Models;
 using System.Net.Http;
-using Api.FoodTruck.DataManagement.DotNetCore.Location.Definition.Entities;
 using Api.FoodTruck.FoodTruckApi.Models;
 
 namespace LinhFoodTruck.Website.Controllers
@@ -42,7 +41,7 @@ namespace LinhFoodTruck.Website.Controllers
         static async Task<GetLocationResponse> GetProductAsync()
         {
             var product = new GetLocationResponse();
-            var path = "https://localhost:44386/FoodTruck/Location/get/currentLocation";
+            var path = "https://linh-foodtruc-location-api.azurewebsites.net/FoodTruck/Location/get/currentLocation";
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync(path);
             if (response.IsSuccessStatusCode)
